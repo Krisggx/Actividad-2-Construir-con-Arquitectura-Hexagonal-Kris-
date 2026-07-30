@@ -1,0 +1,50 @@
+<!doctype html>
+<!-- 
+  👁️ VISTA - Interfaz de Usuario
+  
+  Archivo HTML que define la estructura de la interfaz
+  - Formulario para crear usuarios
+  - Tabla para mostrar usuarios
+  - Estilos CSS (styles.css)
+  - Script del cliente (app.js compilado desde client/app.ts)
+-->
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Lista de Users</h1>
+
+      <form id="user-form" class="user-form">
+        <input id="user-email" name="email" type="email" placeholder="Escribe un email" required />
+        <input id="user-name" name="name" type="text" placeholder="Escribe un nombre" required />
+        <input id="user-password" name="password" type="password" placeholder="Escribe un password" required />
+        <button type="submit">Crear</button>
+      </form>
+
+      <p id="message" class="message"></p>
+
+      <div class="table-wrap">
+        <table class="user-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nombre</th>
+              <th>Email</th>
+              <th>Password Hash</th>
+              <th>Creado</th>
+              <th>Acción</th>
+            </tr>
+          </thead>
+          <tbody id="user-table-body"></tbody>
+        </table>
+      </div>
+    </main>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

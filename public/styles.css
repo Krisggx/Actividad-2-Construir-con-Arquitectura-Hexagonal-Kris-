@@ -1,0 +1,108 @@
+:root {
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f6f7fb;
+  color: #1f2937;
+}
+
+.container {
+  max-width: 640px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.user-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.user-form input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+
+.user-form button {
+  padding: 8px 12px;
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.message {
+  min-height: 20px;
+  margin: 0 0 12px;
+  color: #b91c1c;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.user-table th,
+.user-table td {
+  border: 1px solid #e5e7eb;
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.user-table th {
+  background: #f3f4f6;
+  font-weight: 600;
+}
+
+.user-table td:nth-child(4) {
+  word-break: break-all;
+}
+
+.user-table td:last-child {
+  white-space: nowrap;
+}
+
+.user-table tbody tr:nth-child(even) {
+  background: #f9fafb;
+}
+
+.user-table tbody tr td {
+  border-radius: 6px;
+}
+
+.delete-btn {
+  border: none;
+  background: #dc2626;
+  color: #fff;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.password-btn {
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  border-radius: 6px;
+  padding: 6px 10px;
+  margin-right: 6px;
+  cursor: pointer;
+}
